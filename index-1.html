@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>TODO</title>
+  
+  <!-- FontAwesome -->
+   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="https://kit.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg="nest"></script>
+  <script src="https://kit.fontawesome.com/a2b3da0c65.js " crossorigin=" anonymous "></script>
+
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+      <!--Header-->
+  <header class="header-menu">
+    <h1 class="logo">TODO</h1>
+    <a href="index.html" class="btn-back" title="Voltar"><i class="fa fa-reply" aria-hidden="true"></i><a/>
+  </header>
+  <div class="title-sub">
+    <h2>Lista de Tarefas: </h2>
+  </div>
+  <section class="conteiner">
+    
+      <!--modal-->
+  <form class="modal" id="card_form">
+    <div class="header">
+      <div class="title">Adicionar Tarefa</div>
+      <button class="btn close-modal">&times;</button>
+    </div>
+    <div class="body">
+      <input type="text" id="todo_input" />
+      <input type="submit" value="Adicionar" id="todo_submit" />
+    </div>
+  </form>
+
+  <!--Card -->
+  <div class="row">
+    <div class="card" id="no_status">
+      <div id="post-container"></div>
+      <button type="submit" data-target-modal="#card_form" id="add-btn">+ Adicionar Tarefa</button>
+      <div class="task" draggable="true">
+       
+        <ul id="invitedList">
+          <div id="overlay"></div>
+        </ul>
+        
+      </div>
+    </div>
+  </div>
+
+  </section>
+  
+ 
+  <script src="mains.js"></script>
+</body>
+</html>
